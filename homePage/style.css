@@ -5,6 +5,7 @@
             --bgHovercolor: rgb(194, 194, 194);
             --Hovercolor: white;
         }
+
         .dark {
             --backColor: rgb(6, 0, 34);
             --color: white;
@@ -17,10 +18,11 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             margin: 0;
         }
-        
+
         .logo {
             display: flex;
         }
+
         #mode {
             margin-left: 40px;
             background: none;
@@ -31,8 +33,9 @@
             padding-right: 10px;
             padding-left: 10px;
             color: var(--color);
-            transition: background-color 0.5s , color 0.5s;
+            transition: background-color 0.5s, color 0.5s;
         }
+
         #mode:hover {
             background-color: var(--bgHovercolor);
         }
@@ -44,14 +47,15 @@
             text-align: center;
             padding: 2px;
             height: 50px;
-            transition: background 1s , color 1s;
+            transition: background 1s, color 1s;
         }
-        .login a ,
-        .center_a a ,
+
+        .login a,
+        .center_a a,
         .loginb {
             background-color: transparent;
             border: none;
-            border-radius: 5px 5px 0px 0px; 
+            border-radius: 5px 5px 0px 0px;
             font-size: 15px;
             padding: 12px;
             text-decoration: none;
@@ -60,20 +64,20 @@
             transition-duration: 0.2s;
         }
 
-        .login .s{
+        .login .s {
             background-color: transparent;
             border: 1px solid rgb(23, 134, 23);
-            border-radius: 5px 5px 0px 0px; 
+            border-radius: 5px 5px 0px 0px;
             font-size: 15px;
             padding: 12px;
             text-decoration: none;
             color: var(--color);
         }
 
-        .login .l{
+        .login .l {
             background-color: transparent;
             border: 1px solid rgb(2, 0, 110);
-            border-radius: 5px 5px 0px 0px; 
+            border-radius: 5px 5px 0px 0px;
             font-size: 15px;
             padding: 12px;
             text-decoration: none;
@@ -88,21 +92,67 @@
             border-bottom: var(--border-bottom);
         }
 
-        .login .s:hover  {
+        .login .s:hover {
             background-color: rgb(23, 134, 23);
             color: var(--Hovercolor);
         }
-        .login .l:hover  {
+
+        .login .l:hover {
             background-color: rgb(0, 29, 110);
             color: var(--Hovercolor);
         }
 
-        .center_a{
+        .center_a {
             font: bold;
-            display: flex;  
+            display: flex;
             text-align: center;
         }
 
         #loginm {
             background-color: var(--backColorbackColor);
+        }
+
+        .glow-btn {
+            position: relative;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background: #111;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .glow-btn::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            /* سمك البوردر */
+            border-radius: 30px;
+            background: linear-gradient(90deg, rgb(216, 216, 216), rgb(0, 0, 0), #00f);
+            background-size: 300% 300%;
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            animation: borderMove 3s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes borderMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
