@@ -4,6 +4,8 @@
             --border-bottom: 3px solid rgb(0, 0, 0);
             --bgHovercolor: rgb(194, 194, 194);
             --Hovercolor: white;
+            --backColor-inv: rgb(6, 0, 34);
+            --color-inv: white;
         }
 
         .dark {
@@ -11,6 +13,8 @@
             --color: white;
             --border-bottom: 3px solid rgb(255, 255, 255);
             --bgHovercolor: rgb(44, 37, 61);
+            --backColor-inv: rgb(211, 211, 211);
+            --color-inv: rgb(0, 0, 0);
         }
 
 
@@ -114,10 +118,10 @@
 
         .glow-btn {
             position: relative;
-            padding: 15px 25px;
+            padding: 13px 25px;
             font-size: 18px;
-            color: #fff;
-            background: #111;
+            color: var(--color-inv);
+            background: var(--backColor-inv);
             border: none;
             border-radius: 30px;
             cursor: pointer;
