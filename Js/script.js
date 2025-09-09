@@ -1,9 +1,10 @@
-    const mode = document.getElementById("mode");
-        mode.addEventListener("click", () => {
-            document.body.classList.toggle("dark")
+const mode = document.getElementById("modecolor");
+mode.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
     if (document.body.classList.contains("dark")) {
         mode.textContent = "Light Mode"
-    }else {
+    } else {
         mode.textContent = "Dark Mode"
     }
-    })    
+}
+)    
