@@ -162,7 +162,7 @@ nav {
 
 .left-side {
   flex: 1;
-  background-image: url("https://example.com/camera-image.jpg");
+  background-image: url("./pexels.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -313,7 +313,7 @@ form input, form select {
 
 .left-side {
   flex: 1;
-  background-image: url("/pexels-technobulka-2908984.jpg");
+  background-image: url("./pexels.jpg");
   background-size: cover;
   background-position: center;
   color: white;
