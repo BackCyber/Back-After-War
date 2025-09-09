@@ -6,6 +6,7 @@
   --Hovercolor: white;
   --backColor-inv: rgb(6, 0, 34);
   --color-inv: white;
+  --shadow-color: 0 4px 8px rgba(0,0,0,0.25);
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --border-bottom: 3px solid rgb(255, 255, 255);
   --bgHovercolor: rgb(44, 37, 61);
   --backColor-inv: rgb(211, 211, 211);
+  --shadow-color: 0 4px 8px rgba(255, 255, 255, 0.712);
 }
 
 body {
@@ -29,10 +31,10 @@ body {
   margin-left: 40px;
   background: none;
   border: none;
+  padding: 12px 0;
+  margin: 2px 0;
   font-weight: bold;
   margin-left: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
   color: var(--color);
   transition: background-color 0.5s, color 0.5s;
 }
@@ -75,7 +77,30 @@ nav {
 }
 
 #loginm {
-  background-color: red;
+  background-color: var(--backColor);
+  list-style: none;
+  border-radius: 8px;
+  padding: 8px;
+  width: 80px;
+  height: 90px;
+}
+#loginm li {
+  width: 100%;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  padding: 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+#loginm li:hover {
+  background-color: var(--backColor);
+  box-shadow: var(--shadow-color);
+  color: var(--color);
+  border-radius: 5px;
+}
+#loginm a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color);
 }
 
 .glow-btn {
