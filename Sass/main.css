@@ -8,8 +8,8 @@
   --backColor-inv: rgb(6, 0, 34);
   --color-inv: white;
   --shadow-color: 0 4px 8px rgba(0,0,0,0.25);
-  --primary-color: #00b4db;
-  --secondary-color: #0083b0;
+  --primary-color: #008ead;
+  --secondary-color: #004f69;
   --dark-purple: #4b0082;
   --text-color: #333;
   --light-gray: #ddd;
@@ -162,7 +162,7 @@ nav {
 
 .left-side {
   flex: 1;
-  background-image: url("./pexels.jpg");
+  background-image: url("../Sass/pexels.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -217,7 +217,7 @@ nav {
 }
 
 .form-card h2 {
-  color: #00b4db;
+  color: #0a32e6;
   margin-bottom: 5px;
 }
 
@@ -250,6 +250,7 @@ form input, form select {
   display: flex;
   gap: 10px;
   margin-top: 5px;
+  justify-content: space-between;
 }
 
 .sub-btn {
@@ -311,9 +312,9 @@ form input, form select {
   overflow: hidden;
 }
 
-.left-side {
+.left-side1 {
   flex: 1;
-  background-image: url("./pexels.jpg");
+  background-image: url("../Sass/pexels.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -323,7 +324,7 @@ form input, form select {
   justify-content: space-between;
   position: relative;
 }
-.left-side::before {
+.left-side1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -332,15 +333,15 @@ form input, form select {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-.left-side h1, .left-side p {
+.left-side1 h1, .left-side1 p {
   position: relative;
   z-index: 1;
 }
-.left-side h1 {
+.left-side1 h1 {
   font-size: 3em;
   margin: 0;
 }
-.left-side p {
+.left-side1 p {
   font-size: 1.2em;
   margin: 0;
 }
