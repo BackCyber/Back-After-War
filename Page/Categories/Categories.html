@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Library - Browse Categories</title>
+    <link rel="stylesheet" href="../../Sass/main2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Just Library</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for books...">
+            <i class="fas fa-search"></i>
+        </div>
+        <nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Books</h3>
+            <div class="filter">
+                <label>Genre</label>
+                <select>
+                    <option>All Genres</option>
+                    <option>Fiction</option>
+                    <option>Non-Fiction</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label>Author</label>
+                <div class="toggle">
+                    <input type="checkbox" id="author-toggle">
+                    <label for="author-toggle"></label>
+                </div>
+            </div>
+            <div class="filter">
+                <label>Publisher</label>
+                <div class="toggle">
+                    <input type="checkbox" id="publisher-toggle">
+                    <label for="publisher-toggle"></label>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-header">
+                <h1>Browse by Interests</h1>
+                <button class="view-all-btn">View All</button>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3>Psychology</h3>
+                    <div class="rating">★★★★ <span>10+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                    <h3>Mystery</h3>
+                    <div class="rating">★★★★ <span>18+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>History</h3>
+                    <div class="rating">★★★★ <span>122</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Entrepreneurship</h3>
+                    <div class="rating">★★★★ <span>18+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Sci-Fi</h3>
+                    <div class="rating">★★★★ <span>130+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <h3>Health</h3>
+                    <div class="rating">★★★★ <span>19+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-tablet-alt"></i></div>
+                    <h3>Technology</h3>
+                    <div class="rating">★★★★ <span>18+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-scroll"></i></div>
+                    <h3>Law</h3>
+                    <div class="rating">★★★★ <span>18+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Ideas</h3>
+                    <div class="rating">★★★★ <span>13+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+                <div class="category-card">
+                    <div class="icon"><i class="fas fa-dragon"></i></div>
+                    <h3>Fantasy</h3>
+                    <div class="rating">★★★★ <span>19+</span></div>
+                    <button class="show-more-btn">Show More</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@justlibrary.com</p>
+                <p>Phone: +1-800-555-1234</p>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>123 Library St, Knowledge City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Just Library. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // Optional: Add functionality to buttons if needed (e.g., alert for demo)
+    const showMoreButtons = document.querySelectorAll('.show-more-btn');
+    showMoreButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            alert('Showing more books in this category!');
+        });
+    });
+
+    const viewAllBtn = document.querySelector('.view-all-btn');
+    if (viewAllBtn) {
+        viewAllBtn.addEventListener('click', () => {
+            alert('Viewing all categories!');
+        });
+    }
+});
+</script>
+</html>
