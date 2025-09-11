@@ -44,6 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
             errorMessage += 'الإيميل غير صالح.\n';
         }
 
+        // تحقق من كلمة المرور
+        const password = document.getElementById('password').value.trim();
+        if (password === '') {
+            isValid = false;
+            errorMessage += 'كلمة المرور مطلوبة.\n';
+        } else if (password.length < 6) {
+            isValid = false;
+            errorMessage += 'كلمة المرور يجب أن تكون 6 أحرف على الأقل.\n';
+        }
+
         // تحقق من الجنس
         const gender = document.querySelector('input[name="gender"]:checked');
         if (!gender) {
@@ -56,13 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (dob === '') {
             isValid = false;
             errorMessage += 'تاريخ الميلاد مطلوب.\n';
-        }
-
-        // تحقق من المدينة
-        const city = document.getElementById('city').value.trim();
-        if (city === '') {
-            isValid = false;
-            errorMessage += 'المدينة مطلوبة.\n';
         }
 
         // تحقق من البلد
@@ -79,8 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (isValid) {
-            alert('التسجيل ناجح!'); // هنا ممكن تبعت البيانات للـ backend
-            // form.submit(); // لو عايز تبعت حقيقي
+            alert('التسجيل ناجح!');
         } else {
             alert(errorMessage);
         }

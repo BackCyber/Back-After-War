@@ -29,125 +29,85 @@ body {
   margin: 0;
 }
 
-.logo {
+.home-container {
   display: flex;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#modecolor {
-  margin-left: 40px;
-  background: none;
-  border: none;
-  padding: 12px 0;
-  margin: 2px 0;
-  font-weight: bold;
-  margin-left: 10px;
-  color: var(--color);
-  transition: background-color 0.5s, color 0.5s;
-}
-#modecolor:hover {
-  background-color: var(--bgHovercolor);
-}
-
-nav {
+.home-left-side {
+  background: url("../Sass/pexels.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 20px;
+  flex: 1;
   display: flex;
-  justify-content: space-around;
-  background-color: var(--backColor);
-  text-align: center;
-  padding: 2px;
-  height: 50px;
-  transition: background-color 1s, color 1s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.centerbutton a {
-  background-color: transparent;
-  border: none;
-  border-radius: 5px 5px 0px 0px;
-  font-size: 15px;
-  padding: 12px;
-  text-decoration: none;
-  color: var(--color);
-  margin: 5px;
-  transition-duration: 0.2s;
-}
-
-.centerbutton a:hover {
-  background-color: var(--bgHovercolor);
-  color: var(--color);
-  border-bottom: var(--border-bottom);
-}
-
-.centerbutton {
-  font: bold;
+.home-right-side {
+  padding: 40px;
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-card {
   text-align: center;
 }
 
-#loginm {
-  background-color: var(--backColor);
-  list-style: none;
-  border-radius: 8px;
-  padding: 8px;
-  width: 130px;
-  height: 90px;
-  border-radius: 5px;
-  transition: background-color 0.5s, color 0.5s;
+.home-card h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #153d4b;
 }
-#loginm li {
+
+.home-card p {
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   width: 100%;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-  padding: 8px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  border-radius: 5px;
-}
-#loginm li:hover {
-  background-color: var(--backColor);
-  box-shadow: var(--shadow-color);
-  color: var(--color);
-  border-radius: 5px;
-}
-#loginm a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--color);
-  transition: background-color 0.5s, color 0.5s;
 }
 
-.glow-btn {
-  position: relative;
-  padding: 13px 25px;
-  font-size: 18px;
-  color: var(--color-inv);
-  background: var(--backColor-inv);
+.home-buttons a {
+  padding: 15px;
   border: none;
-  border-radius: 30px;
+  border-radius: 25px;
+  font-size: 1em;
   cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
-.glow-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, rgb(216, 216, 216), rgb(0, 0, 0), #00f);
-  background-size: 300% 300%;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: borderMove 3s linear infinite;
-  z-index: -1;
+
+.login-btn {
+  background-color: #30a7be;
 }
-@keyframes borderMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+.login-btn:hover {
+  background-color: #278da4;
+}
+
+.register-btn {
+  background-color: #153d4b;
+}
+
+.register-btn:hover {
+  background-color: #0e2b35;
 }
 
 .container {

@@ -4,32 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Just Library</title>
     <link rel="stylesheet" href="../Sass/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #30a7be, #153d4b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <h3 style="color: white;">LOGO</h3>
-            <button id="modecolor">الوضع الليلي</button>
+    <div class="home-container">
+        <div class="home-left-side">
+            <h1>Just Library</h1>
+            <p>Journey Everywhere</p>
         </div>
-        <div class="centerbutton">
-            <a href="">Admin</a>
-            <a href="">تواصل معنا</a>
-            <a href="">مصنفات</a>
-            <a href="">الرئيسية</a>
+
+        <div class="home-right-side">
+            <div class="home-card">
+                <h2>Welcome</h2>
+                <p>Choose Your Book, Choose the Idea</p>
+                <div class="home-buttons">
+                    <a href="login.html" class="login-btn">Log In</a>
+                    <a href="reg.html" class="register-btn">Sign Up</a>
+                </div>
+            </div>
         </div>
-        <div class="loginbutton">
-            <button class="glow-btn" onclick=" loginm.hidden^=1">تسجيل</button>
-            <ul id="loginm" hidden style="list-style: none;">
-                <li><a href="login.html" class="">تسجيل الدخول</a></li>
-                <br>
-                <li><a href="reg.html" class="">أنشاء حساب</a></li>
-            </ul>
-        </div>
-    </nav>
-    <script src="../Js/script.js"></script>
+    </div>
 </body>
 
 </html>
