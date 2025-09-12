@@ -413,6 +413,11 @@ header {
 .nav-links a:hover {
   color: #00bcd4;
 }
+.nav-links .login {
+  border-radius: 600px;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
 
 .menu-toggle {
   display: none;
@@ -605,6 +610,295 @@ footer {
 }
 
 .category-grid {
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+}
+
+.sv .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.sv .search-bar {
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+  margin: 0 20px;
+}
+.sv .search-bar input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.sv .search-bar i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.sv .nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.sv .nav-links li {
+  margin-left: 20px;
+}
+.sv .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.sv .nav-links a:hover {
+  color: #00bcd4;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sv .hero {
+  height: 400px;
+  background: linear-gradient(rgba(0, 188, 212, 0.7), rgba(0, 188, 212, 0.7)), url("https://via.placeholder.com/1200x400?text=Library+Background") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.sv .hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.sv .hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sv .get-started-btn {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.sv .get-started-btn:hover {
+  background-color: #0097a7;
+}
+
+.sv .services {
+  padding: 50px 20px;
+  text-align: center;
+}
+.sv .services h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #00bcd4;
+}
+.sv .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sv .service-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sv .icon {
+  font-size: 40px;
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+
+.sv .service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sv .service-card p {
+  color: #666;
+}
+
+.sv .offer {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.sv .offer h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+.sv .offer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  gap: 20px;
+}
+.sv .offer-text p {
+  font-size: 16px;
+  color: #666;
+  max-width: 400px;
+}
+
+.sv .team-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.sv .team-member {
+  text-align: center;
+}
+.sv .team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  margin-bottom: 10px;
+}
+.sv .team-member h3 {
+  font-size: 16px;
+  color: #333;
+}
+.sv .team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+.sv .offer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sv .learn-more-btn, .sign-up-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sv .learn-more-btn {
+  background-color: transparent;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
+}
+.sv .learn-more-btn:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.sv .sign-up-btn {
+  background-color: #00bcd4;
+  color: #fff;
+}
+.sv .sign-up-btn:hover {
+  background-color: #0097a7;
+}
+
+.sv footer {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sv .footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sv .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.sv .footer-section p {
+  font-size: 14px;
+  color: #666;
+}
+
+.sv .footer-section a {
+  margin: 0 10px;
+  color: #00bcd4;
+  font-size: 20px;
+}
+
+.sv .footer-bottom {
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .sv header {
+    padding: 20px;
+  }
+  .sv .search-bar {
+    margin: 0 10px;
+  }
+  .sv .menu-toggle {
+    display: block;
+  }
+  .sv .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sv .nav-links.active {
+    display: flex;
+  }
+  .sv .hero {
+    height: 300px;
+  }
+  .sv .hero-content h1 {
+    font-size: 24px;
+  }
+  .sv .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .sv .offer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sv .team-grid {
+    justify-content: center;
+  }
+  .sv .offer-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sv .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
