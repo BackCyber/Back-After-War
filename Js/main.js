@@ -1,8 +1,10 @@
-    document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.main-menu-toggle');
+    const navLinks = document.querySelector('.main-nav-links');
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 });

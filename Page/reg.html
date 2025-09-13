@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr"> <!-- dir="rtl" عشان العربي، لو عايز ltr غيره -->
+<html lang="ar" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #30a7be, #153d4b);
-            /* تدرج أخضر-أزرق مشابه للصورة */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,20 +19,19 @@
             color: #333;
         }
     </style>
-
 </head>
 
 <body>
-    <div class="container">
+    <div class="reg-container">
         <!-- الجانب اليسار: الصورة والنصوص -->
-        <div class="left-side">
+        <div class="reg-left-side">
             <h1>Just Library</h1>
             <p>Journey Everywhere</p>
         </div>
 
         <!-- الجانب اليمين: النموذج -->
-        <div class="right-side">
-            <div class="form-card">
+        <div class="reg-right-side">
+            <div class="reg-form-card">
                 <h2>Registration</h2>
                 <p>Choose Your Book, Choose the idea</p>
                 <form id="registrationForm">
@@ -47,7 +45,7 @@
                     <input type="password" id="password" placeholder="********">
 
                     <label>Gender</label>
-                    <div class="gender-options">
+                    <div class="reg-gender-options">
                         <input type="radio" id="male" name="gender" value="Male">
                         <label for="male">Male</label>
                         <input type="radio" id="female" name="gender" value="Female">
@@ -62,20 +60,19 @@
                         <option value="">Select Country</option>
                         <option value="Egypt">Egypt</option>
                         <option value="Bangladesh">Bangladesh</option>
-                        <!-- أضف دول أكتر لو عايز -->
                     </select>
 
                     <label>Subscription</label>
-                    <div class="subscription-options">
-                        <button type="button" class="sub-btn" data-sub="Bronze">Bronze</button>
-                        <button type="button" class="sub-btn" data-sub="Silver">Silver</button>
-                        <button type="button" class="sub-btn" data-sub="Gold">Gold</button>
+                    <div class="reg-subscription-options">
+                        <button type="button" class="reg-sub-btn" data-sub="Bronze">Bronze</button>
+                        <button type="button" class="reg-sub-btn" data-sub="Silver">Silver</button>
+                        <button type="button" class="reg-sub-btn" data-sub="Gold">Gold</button>
                     </div>
                     <input type="hidden" id="subscription" name="subscription">
 
-                    <div class="form-buttons">
-                        <button type="button" class="cancel-btn">Cancel</button>
-                        <button type="submit" class="confirm-btn">Confirm</button>
+                    <div class="reg-form-buttons">
+                        <button type="button" class="reg-cancel-btn">Cancel</button>
+                        <button type="submit" class="reg-confirm-btn">Confirm</button>
                     </div>
                 </form>
             </div>

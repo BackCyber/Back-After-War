@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registrationForm');
-    const subButtons = document.querySelectorAll('.sub-btn');
+    const subButtons = document.querySelectorAll('.reg-sub-btn');
+    // Change this line to match the HTML
     const subscriptionInput = document.getElementById('subscription');
-    const cancelBtn = document.querySelector('.cancel-btn');
+    const cancelBtn = document.querySelector('.reg-cancel-btn');
 
     // اختيار الاشتراك (تغيير لون الزر النشط)
     subButtons.forEach(btn => {

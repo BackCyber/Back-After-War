@@ -1,9 +1,20 @@
-.logo
+.categories-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 50px
+    background-color: #fff
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    position: sticky
+    top: 0
+    z-index: 100
+
+.categories-logo
     font-size: 24px
     font-weight: bold
     color: #00bcd4
 
-.search-bar
+.categories-search-bar
     flex: 1
     max-width: 400px
     position: relative
@@ -20,7 +31,7 @@
         transform: translateY(-50%)
         color: #999
 
-.nav-links
+.categories-nav-links
     display: flex
     list-style: none
     & li
@@ -29,16 +40,16 @@
         color: #333
         font-size: 20px
 
-.menu-toggle
+.categories-menu-toggle
     display: none
 
-.container
+.categories-container
     display: flex
     max-width: 1200px
     margin: 20px auto
     padding: 0 20px
 
-.sidebar
+.categories-sidebar
     width: 250px
     background-color: #fff
     padding: 20px
@@ -50,7 +61,7 @@
         margin-bottom: 20px
         color: #00bcd4
 
-.filter
+.categories-filter
     margin-bottom: 15px
     & label
         display: block
@@ -62,7 +73,7 @@
         border: 1px solid #ddd
         border-radius: 5px
 
-.toggle
+.categories-toggle
     position: relative
     display: inline-block
     width: 40px
@@ -96,10 +107,10 @@
     & input:checked + label:before
         transform: translateX(20px)
 
-main
+.categories-main
     flex: 1
 
-.main-header
+.categories-main-header
     display: flex
     justify-content: space-between
     align-items: center
@@ -108,7 +119,7 @@ main
         font-size: 28px
         color: #333
 
-.view-all-btn
+.categories-view-all-btn
     padding: 10px 20px
     background-color: #00bcd4
     color: #fff
@@ -123,14 +134,14 @@ main
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))
     gap: 20px
 
-.category-card
+.categories-category-card
     background-color: #fff
     padding: 20px
     border-radius: 10px
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
     text-align: center
 
-.icon
+.categories-icon
     width: 60px
     height: 60px
     margin: 0 auto 10px
@@ -142,18 +153,18 @@ main
     font-size: 30px
     color: #00bcd4
 
-.category-card h3
+.categories-category-card h3
     font-size: 18px
     margin-bottom: 5px
 
-.rating
+.categories-rating
     color: #ffca28
     font-size: 14px
     margin-bottom: 10px
     & span
         color: #666
 
-.show-more-btn
+.categories-show-more-btn
     padding: 8px 15px
     background-color: #00bcd4
     color: #fff
@@ -164,14 +175,14 @@ main
     &:hover
         background-color: #0097a7
 
-footer
+.categories-footer
     background-color: #fff
     padding: 30px 20px
     text-align: center
     margin-top: 50px
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1)
 
-.footer-content
+.categories-footer-content
     display: flex
     justify-content: center
     gap: 50px
@@ -179,49 +190,48 @@ footer
     max-width: 1200px
     margin: 0 auto
 
-.footer-section h3
-    font-size: 18px
-    margin-bottom: 10px
-    color: #00bcd4
+.categories-footer-section
+    & h3
+        font-size: 18px
+        margin-bottom: 10px
+        color: #00bcd4
+    & p
+        font-size: 14px
+        color: #666
+    & a
+        margin: 0 10px
+        color: #00bcd4
+        font-size: 20px
 
-.footer-section p
-    font-size: 14px
-    color: #666
-
-.footer-section a
-    margin: 0 10px
-    color: #00bcd4
-    font-size: 20px
-
-.footer-bottom
+.categories-footer-bottom
     font-size: 12px
     color: #666
 
 @media (max-width: 768px)
-    .container
+    .categories-container
         flex-direction: column
 
-    .sidebar
+    .categories-sidebar
         width: 100%
         margin-right: 0
         margin-bottom: 20px
 
-    .menu-toggle
+    .categories-menu-toggle
         display: block
 
-.nav-links
-    display: none
-    position: absolute
-    top: 60px
-    right: 0
-    background-color: #fff
-    flex-direction: column
-    padding: 10px
-    &.active
-        display: flex
+    .categories-nav-links
+        display: none
+        position: absolute
+        top: 60px
+        right: 0
+        background-color: #fff
+        flex-direction: column
+        padding: 10px
+        &.active
+            display: flex
 
-.main-header
-    flex-direction: column
-    text-align: center
-    & button
-        margin-top: 10px
+    .categories-main-header
+        flex-direction: column
+        text-align: center
+        & button
+            margin-top: 10px

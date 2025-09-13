@@ -1,134 +1,132 @@
-.container  
-    display: flex 
-    width: 80% 
-    max-width: 1200px 
-    height: 80vh 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) 
-    border-radius: 10px 
-    overflow: hidden 
 
-.left-side  
-    flex: 1 
-    background-image: url("../Sass/pexels.jpg")  /* غير الرابط ده بصورة الكاميرا اللي عايزها */
-    background-size: cover 
-    background-position: center 
-    color: white 
-    padding: 40px 
-    display: flex 
-    flex-direction: column 
-    justify-content: space-between 
+.reg-container
+    display: flex
+    width: 80%
+    max-width: 1200px
+    height: 80vh
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)
+    border-radius: 10px
+    overflow: hidden
+
+.reg-left-side
+    flex: 1
+    background-image: url("../Sass/pexels.jpg")
+    background-size: cover
+    background-position: center
+    color: white
+    padding: 40px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     position: relative
 
-.left-side::before  
-    content: '' 
-    position: absolute 
-    top: 0 
-    left: 0 
-    width: 100% 
-    height: 100% 
-    background: rgba(0, 0, 0, 0.3)  /* غطاء خفيف عشان النصوص تبان */
+.reg-left-side::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.3)
 
-.left-side h1, .left-side p  
-    position: relative 
-    z-index: 1 
+.reg-left-side h1, .reg-left-side p
+    position: relative
+    z-index: 1
 
-.left-side h1  
-    font-size: 3em 
-    margin: 0 
+.reg-left-side h1
+    font-size: 3em
+    margin: 0
 
-.left-side p  
-    font-size: 1.2em 
-    margin: 0 
+.reg-left-side p
+    font-size: 1.2em
+    margin: 0
 
-.right-side  
-    flex: 1 
-    background: white 
-    display: flex 
-    justify-content: center 
-    align-items: center 
-    padding: 20px 
+.reg-right-side
+    flex: 1
+    background: white
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 20px
 
-.form-card  
-    background: white 
-    padding: 40px 
-    border-radius: 10px 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) 
-    width: 80% 
-    max-width: 400px 
+.reg-form-card
+    background: white
+    padding: 40px
+    border-radius: 10px
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+    width: 80%
+    max-width: 400px
 
-.form-card h2  
-    color: #0a32e6 
-    margin-bottom: 5px 
+.reg-form-card h2
+    color: var(--primary-color)
+    margin-bottom: 5px
 
-.form-card p  
-    margin-bottom: 20px 
-    font-size: 0.9em 
+.reg-form-card p
+    margin-bottom: 20px
+    font-size: 0.9em
 
 form label  
-    display: block 
-    margin-top: 10px 
-    font-weight: bold 
+    display: block
+    margin-top: 10px
+    font-weight: bold
 
 form input, form select  
-    width: 100% 
-    padding: 10px 
-    margin-top: 5px 
-    border: 1px solid #ddd 
-    border-radius: 5px 
+    width: 100%
+    padding: 10px
+    margin-top: 5px
+    border: 1px solid #ddd
+    border-radius: 5px
 
-.gender-options  
-    display: flex 
-    gap: 20px 
-    margin-top: 5px 
+.reg-gender-options
+    display: flex
+    gap: 20px
+    margin-top: 5px
 
-.subscription-options  
-    display: flex 
-    gap: 10px 
-    margin-top: 5px 
+.reg-subscription-options
+    display: flex
+    gap: 10px
+    margin-top: 5px
     justify-content: space-between
 
-.sub-btn  
-    padding: 10px 20px 
-    border: none 
-    border-radius: 5px 
-    cursor: pointer 
-    background: #ddd 
-    color: #333 
+.reg-sub-btn
+    padding: 10px 20px
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    background: #ddd
+    color: #333
 
-.sub-btn.active  
-    background: #00b4db 
-    color: white 
+.reg-sub-btn.active
+    background: #00b4db
+    color: white
 
-.form-buttons  
-    display: flex 
-    justify-content: space-between 
-    margin-top: 20px 
+.reg-form-buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
 
-.cancel-btn  
-    background: #4b0082 
-    color: white 
-    padding: 10px 20px 
-    border: none 
-    border-radius: 5px 
-    cursor: pointer 
+.reg-cancel-btn
+    background: #4b0082
+    color: white
+    padding: 10px 20px
+    border: none
+    border-radius: 5px
+    cursor: pointer
 
-
-.confirm-btn  
-    background: #00b4db 
-    color: white 
-    padding: 10px 20px 
-    border: none 
-    border-radius: 5px 
-    cursor: pointer 
-
+.reg-confirm-btn
+    background: #00b4db
+    color: white
+    padding: 10px 20px
+    border: none
+    border-radius: 5px
+    cursor: pointer
 
 /* Responsive للموبايل */
-@media (max-width: 768px)  
-    .container  
-        flex-direction: column 
-        height: auto 
-    
-    .left-side, .right-side  
-        flex: none 
-        height: 300px 
-    
+@media (max-width: 768px)
+    .reg-container
+        flex-direction: column
+        height: auto
+
+    .reg-left-side, .reg-right-side
+        flex: none
+        height: 300px

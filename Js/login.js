@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('loginForm');
-    const cancelBtn = document.querySelector('.cancel-btn');
+    const cancelBtn = document.querySelector('.login-cancel-btn');
 
     // زرار Cancel: إعادة تهيئة النموذج
     cancelBtn.addEventListener('click', () => {

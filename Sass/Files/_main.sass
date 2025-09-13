@@ -1,4 +1,4 @@
-header
+.main-header
     display: flex
     justify-content: space-around
     align-items: center
@@ -9,12 +9,12 @@ header
     top: 0
     z-index: 100
 
-.logo
+.main-logo
     font-size: 24px
     font-weight: bold
     color: #00bcd4
 
-.nav-links
+.main-nav-links
     display: flex
     list-style: none
     & li
@@ -31,12 +31,12 @@ header
         border: 2px solid black
         padding: 5px 10px
 
-.menu-toggle
+.main-menu-toggle
     display: none
     font-size: 24px
     cursor: pointer
 
-.hero
+.main-hero
     height: 400px
     background: url('../Sass/pexels.jpg') no-repeat center center/cover
     display: flex
@@ -54,7 +54,7 @@ header
         font-size: 18px
         margin-bottom: 20px
 
-.explore-btn
+.main-explore-btn
     padding: 10px 20px
     background-color: #00bcd4
     color: #fff
@@ -65,23 +65,23 @@ header
     &:hover
         background-color: #0097a7
 
-.featured-books, .categories, .team
+.main-featured-books, .main-categories, .main-team
     padding: 50px 20px
     text-align: center
 
-.featured-books h2, .categories h2, .team h2
+.main-featured-books h2, .main-categories h2, .main-team h2
     font-size: 28px
     margin-bottom: 30px
     color: #00bcd4
 
-.books-grid
+.main-books-grid
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
     gap: 20px
     max-width: 1200px
     margin: 0 auto
 
-.book-card
+.main-book-card
     background-color: #fff
     padding: 15px
     border-radius: 10px
@@ -97,18 +97,18 @@ header
     & p
         color: #666
 
-.rating
+.main-rating
     color: #ffca28
     font-size: 14px
 
-.category-grid
+.main-category-grid
     display: flex
     justify-content: center
     gap: 30px
     max-width: 1200px
     margin: 0 auto
 
-.category-card
+.main-category-card
     background-color: #fff
     padding: 20px
     border-radius: 10px
@@ -120,14 +120,14 @@ header
         color: #00bcd4
         margin-bottom: 10px
 
-.team-grid
+.main-team-grid
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
     gap: 20px
     max-width: 1200px
     margin: 0 auto
 
-.team-member
+.main-team-member
     background-color: #fff
     padding: 15px
     border-radius: 10px
@@ -139,14 +139,14 @@ header
         border-radius: 50%
         margin-bottom: 10px
 
-footer
+.main-footer
     background-color: #fff
     padding: 30px 20px
     text-align: center
     margin-top: 50px
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1)
 
-.footer-content
+.main-footer-content
     display: flex
     justify-content: center
     gap: 50px
@@ -154,29 +154,29 @@ footer
     max-width: 1200px
     margin: 0 auto
 
-.footer-section h3
+.main-footer-section h3
     font-size: 18px
     margin-bottom: 10px
     color: #00bcd4
 
-.footer-section p
+.main-footer-section p
     font-size: 14px
     color: #666
 
-.footer-section a
+.main-footer-section a
     margin: 0 10px
     color: #00bcd4
     font-size: 20px
 
-.footer-bottom
+.main-footer-bottom
     font-size: 12px
     color: #666
 
 @media (max-width: 768px)
-    .menu-toggle
+    .main-menu-toggle
         display: block
 
-    .nav-links
+    .main-nav-links
         display: none
         position: absolute
         top: 60px
@@ -190,9 +190,9 @@ footer
         & li
             margin: 10px 0
 
-.hero
+.main-hero
     height: 300px
 
-.category-grid
+.main-category-grid
     flex-direction: row
     align-items: center
