@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Library - Browse Categories</title>
-    <link rel="stylesheet" href="../../Sass/main.css">
+    <link rel="stylesheet" href="../Sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
 *{
@@ -18,17 +18,7 @@ body {
     color: #333;
     line-height: 1.6;
     }
-.categories-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+
     </style>
 </head>
 <body>
@@ -165,32 +155,7 @@ body {
         <p class="categories-footer-bottom">© 2025 Just Library. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../Js/Categories.js"></script>
 </body>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.categories-menu-toggle');
-    const navLinks = document.querySelector('.categories-nav-links');
 
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    }
-
-    const showMoreButtons = document.querySelectorAll('.categories-show-more-btn');
-    showMoreButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            alert('Showing more books in this category!');
-        });
-    });
-
-    const viewAllBtn = document.querySelector('.categories-view-all-btn');
-    if (viewAllBtn) {
-        viewAllBtn.addEventListener('click', () => {
-            alert('Viewing all categories!');
-        });
-    }
-});
-</script>
 </html>
