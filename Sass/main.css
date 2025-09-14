@@ -101,6 +101,119 @@ body {
   background-color: #0e2b35;
 }
 
+/* Media Query للهواتف والجوال - أقل من 768px */
+@media (max-width: 768px) {
+  .reg-container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  .reg-left-side, .reg-right-side {
+    flex: none;
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+  }
+  .reg-left-side {
+    height: 150px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    padding: 15px;
+  }
+  .reg-left-side h1 {
+    font-size: 2em;
+  }
+  .reg-left-side p {
+    font-size: 1em;
+  }
+  .reg-right-side {
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .reg-form-card {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .reg-form-card h2 {
+    font-size: 1.5em;
+  }
+  .reg-gender-options {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .reg-gender-options label {
+    margin-right: 15px;
+  }
+  .reg-subscription-options {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .reg-sub-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  .reg-form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reg-cancel-btn, .reg-confirm-btn {
+    width: 100%;
+    text-align: center;
+  }
+  form input, form select {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+/* Media Query للأجهزة اللوحية - بين 769px و 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .reg-container {
+    width: 90%;
+    height: 85vh;
+  }
+  .reg-form-card {
+    padding: 30px;
+    width: 90%;
+  }
+  .reg-left-side {
+    padding: 30px;
+  }
+  .reg-subscription-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reg-sub-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+/* Media Query للشاشات الكبيرة - أكثر من 1200px */
+@media (min-width: 1200px) {
+  .reg-container {
+    max-width: 1100px;
+  }
+  .reg-form-card {
+    padding: 50px;
+  }
+}
+/* تعديلات خاصة للشاشات ذات الارتفاع المحدود */
+@media (max-height: 700px) and (min-width: 769px) {
+  .reg-container {
+    height: 95vh;
+    overflow-y: auto;
+  }
+  .reg-form-card {
+    padding: 20px;
+  }
+}
 .reg-container {
   display: flex;
   width: 80%;
@@ -243,17 +356,117 @@ form input, form select {
 }
 
 /* Responsive للموبايل */
+/* Media Query للهواتف والجوال - أقل من 768px */
 @media (max-width: 768px) {
   .reg-container {
     flex-direction: column;
+    width: 95%;
     height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 90vh;
   }
   .reg-left-side, .reg-right-side {
     flex: none;
-    height: 300px;
+    width: 100%;
+    border-radius: 0;
+    height: auto;
   }
-  .login-left-side {
-    display: none;
+  .reg-left-side {
+    height: 150px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    padding: 15px;
+  }
+  .reg-left-side h1 {
+    font-size: 2em;
+  }
+  .reg-left-side p {
+    font-size: 1em;
+  }
+  .reg-right-side {
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .reg-form-card {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .reg-form-card h2 {
+    font-size: 1.5em;
+  }
+  .reg-gender-options {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .reg-gender-options label {
+    margin-right: 15px;
+  }
+  .reg-subscription-options {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .reg-sub-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  .reg-form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reg-cancel-btn, .reg-confirm-btn {
+    width: 100%;
+    text-align: center;
+  }
+  form input, form select {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+/* Media Query للأجهزة اللوحية - بين 769px و 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .reg-container {
+    width: 90%;
+    height: 85vh;
+  }
+  .reg-form-card {
+    padding: 30px;
+    width: 90%;
+  }
+  .reg-left-side {
+    padding: 30px;
+  }
+  .reg-subscription-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reg-sub-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+/* Media Query للشاشات الكبيرة - أكثر من 1200px */
+@media (min-width: 1200px) {
+  .reg-container {
+    max-width: 1100px;
+  }
+  .reg-form-card {
+    padding: 50px;
+  }
+}
+/* تعديلات خاصة للشاشات ذات الارتفاع المحدود */
+@media (max-height: 700px) and (min-width: 769px) {
+  .reg-container {
+    height: 95vh;
+    overflow-y: auto;
+  }
+  .reg-form-card {
+    padding: 20px;
   }
 }
 .login-container {
