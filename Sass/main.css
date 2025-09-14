@@ -252,6 +252,9 @@ form input, form select {
     flex: none;
     height: 300px;
   }
+  .login-left-side {
+    display: none;
+  }
 }
 .login-container {
   display: flex;
@@ -368,6 +371,9 @@ form input {
   .login-left-side, .login-right-side {
     flex: none;
     height: 300px;
+  }
+  .login-left-side {
+    display: none;
   }
 }
 .main-header {
@@ -592,16 +598,18 @@ form input {
   .main-nav-links li {
     margin: 10px 0;
   }
+  .main-hero {
+    height: 300px;
+  }
+  .main-category-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
-.main-hero {
-  height: 300px;
-}
-
-.main-category-grid {
-  flex-direction: row;
-  align-items: center;
-}
-
 .services-header {
   display: flex;
   justify-content: space-between;
@@ -1170,6 +1178,7 @@ form input {
     background-color: #fff;
     flex-direction: column;
     padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .categories-nav-links.active {
     display: flex;
@@ -1180,6 +1189,15 @@ form input {
   }
   .categories-main-header button {
     margin-top: 10px;
+  }
+  .categories-footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
   }
 }
 .contact-header {

@@ -224,6 +224,7 @@
         background-color: #fff
         flex-direction: column
         padding: 10px
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
         &.active
             display: flex
 
@@ -232,3 +233,12 @@
         text-align: center
         & button
             margin-top: 10px
+
+    .categories-footer-content
+        flex-direction: column
+        gap: 20px
+
+    .categories-grid
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
+        gap: 20px
