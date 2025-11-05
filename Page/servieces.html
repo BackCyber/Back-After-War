@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Library - Our Services</title>
     <link rel="stylesheet" href="../Sass/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Sass/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/Sass/all.min.css">
     <style>
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    }
-body{
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
     </style>
 </head>
+
 <body>
-    <header class="services-header">
-        <div class="services-logo">Just Library</div>
-        <div class="services-search-bar">
-            <input type="text" placeholder="Search for books...">
-            <i class="fas fa-search"></i>
+    <header class="main-header">
+        <div class="main-logo">Just Library</div>
+        <div class="categories-search-bar">
+            <input type="text" placeholder="Search for books..." class="search">
         </div>
         <nav>
-            <div class="services-menu-toggle"><i class="fas fa-bars"></i></div>
-            <ul class="services-nav-links">
-                <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-                <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            <div class="main-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="main-nav-links">
+                <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="Categories.html">Categories <i class="fas fa-book"></i></a></li>
+                <li><a href="servieces.html" style="color: #00bcd4;">Services <i class="fas fa-tools"></i></a></li>
+                <li><a href="contact_us.html">Contact <i class="fas fa-phone"></i></a></li>
+                <li><a href="#">Cart <i class="fas fa-shopping-cart"></i></a></li>
+                <!-- <li><a href="#">Search <i class="fas fa-search icon-search"></i></a></li> -->
+                <li><a href="opening.html">Login <i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -48,26 +53,28 @@ body{
 
     <section class="services-section">
         <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="services-card">
-                <div class="services-icon"><i class="fas fa-tablet-alt"></i></div>
-                <h3>Mobile App</h3>
-                <p>Read anywhere on your device with our seamless app.</p>
-            </div>
-            <div class="services-card">
-                <div class="services-icon"><i class="fas fa-search"></i></div>
-                <h3>Advanced Search</h3>
-                <p>Find exactly what you're looking for in seconds.</p>
-            </div>
-            <div class="services-card">
-                <div class="services-icon"><i class="fas fa-book"></i></div>
-                <h3>Digital Library</h3>
-                <p>Access thousands of e-books and audiobooks.</p>
-            </div>
-            <div class="services-card">
-                <div class="services-icon"><i class="fas fa-comments"></i></div>
-                <h3>Community Chat</h3>
-                <p>Discuss books with fellow readers and experts.</p>
+        <div class="services-grid container">
+            <div class="row justify-content-center">
+                <div class="services-card col-lg-4 col-md-6 col-sm-12 m-3">
+                    <div class="services-icon"><i class="fas fa-tablet-alt"></i></div>
+                    <h3>Mobile App</h3>
+                    <p>Read anywhere on your device with our seamless app.</p>
+                </div>
+                <div class="services-card col-lg-4 col-md-6 col-sm-12 m-3">
+                    <div class="services-icon"><i class="fas fa-search"></i></div>
+                    <h3>Advanced Search</h3>
+                    <p>Find exactly what you're looking for in seconds.</p>
+                </div>
+                <div class="services-card col-lg-4 col-md-6 col-sm-12 m-3">
+                    <div class="services-icon"><i class="fas fa-book"></i></div>
+                    <h3>Digital Library</h3>
+                    <p>Access thousands of e-books and audiobooks.</p>
+                </div>
+                <div class="services-card col-lg-4 col-md-6 col-sm-12 m-3">
+                    <div class="services-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Community Chat</h3>
+                    <p>Discuss books with fellow readers and experts.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -97,27 +104,44 @@ body{
         </div>
     </section>
 
-    <footer class="services-footer">
-        <div class="services-footer-content">
-            <div class="services-footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: info@justlibrary.com</p>
-                <p>Phone: +1-800-555-1234</p>
-            </div>
-            <div class="services-footer-section">
-                <h3>Address</h3>
-                <p>123 Library St, Knowledge City</p>
-            </div>
-            <div class="services-footer-section">
-                <h3>Follow Us</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <p class="services-footer-bottom">© 2025 Just Library. All rights reserved.</p>
+    <footer class="main-footer">
+        <section class="container">
+            <article class="row">
+                <div class="col-lg-4 col-sm-12 p-lg-0 pb-sm-4 main-footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@justlibrary.com</p>
+                    <p>Phone: +1-800-555-1234</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 p-lg-0 pb-sm-4 main-footer-section">
+                    <h3>Address</h3>
+                    <p>123 Library St, Knowledge City</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 p-lg-0 pb-sm-4 main-footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </article>
+        </section>
+        <p class="main-footer-bottom">© 2025 Just Library. All rights reserved.</p>
     </footer>
 
-    <script src="../Js/services.js"></script>
+    <script src="/Sass/all.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.main-menu-toggle');
+            const navLinks = document.querySelector('.main-nav-links');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
+
 </body>
+
 </html>

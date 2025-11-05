@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameOfBook - Welcome to the World of Knowledge</title>
+    <link rel="stylesheet" href="/Sass/main.css">
+    <link rel="stylesheet" href="/Sass/all.min.css">
+    <link rel="stylesheet" href="/Sass/bootstrap-grid.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-logo">Just Library</div>
+        <div class="categories-search-bar">
+            <input type="text" placeholder="Search for books..." class="search">
+        </div>
+        <nav>
+            <div class="main-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="main-nav-links">
+                <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="Categories.html" style="color: #00bcd4;">Categories <i class="fas fa-book"></i></a></li>
+                <li><a href="servieces.html">Services <i class="fas fa-tools"></i></a></li>
+                <li><a href="contact_us.html">Contact <i class="fas fa-phone"></i></a></li>
+                <li><a href="#">Cart <i class="fas fa-shopping-cart"></i></a></li>
+                <!-- <li><a href="#">Search <i class="fas fa-search icon-search"></i></a></li> -->
+                <li><a href="opening.html">Profile <i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container main-book-info mt-5">
+            <div class="row">
+                <div class="left col-lg-4 col-sm-12 book-cover">
+                    <div class="card">
+                        <div class="front frAn">
+                            <img src="/Sass/images/Books Covers/1 (13).jpg" alt="">
+                            <div class="back">
+                                <img src="/Sass/images/Books Covers/1 (18).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="flip" class="favorite"><i class="fas fa-rotate"></i> Flip to Back</button>
+                    </div>
+                </div>
+                <div class="right col-lg-8 col-sm-12">
+                    <h1>Rachel Vincent</h1>
+                    <h3>by: <Span class="aouther"> Rachel Vincent</Span></h3>
+                    <h4><Span class="aouther">★★★★☆</Span> 1250 Customer Reviews</h4>
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eligendi molestias sed, totam nisi
+                        commodi cupiditate at error eaque, cum illo? Est dolorum unde repellendus nulla similique
+                        inventore, iste voluptatem.
+                        Enim non quis illum velit optio nam ipsam facere ab placeat esse minus id totam, autem est
+                        delectus expedita dolor in adipisci? Perspiciatis ab aspernatur sint, veniam nihil nostrum
+                        deleniti!
+                        Atque mollitia incidunt porro exercitationem sint itaque, perferendis ad, eveniet similique
+                        explicabo sequi ipsam aut alias facere. Expedita officia aliquid, blanditiis iure dignissimos,
+                        quod rem in eligendi, molestiae iste commodi?</h4>
+                    <h2><span><b>$</b></span>70.99</h2>
+                    <label for="Quantity">Quantity</label>
+                    <input type="number" name="Quantity" id="quantity" max="10">
+                    <div class="mt-3 d-flex share">
+                        <button class="follow">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+                        <button class="favorite"><i class="fas fa-heart"></i>Add to Favorite</button>
+                        <div class="d-flex">
+                            <h4>Share :&nbsp;&nbsp;</h4>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer class="main-footer">
+        <section class="container">
+            <article class="row">
+                <div class="col-lg-4 col-sm-12 main-footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@justlibrary.com</p>
+                    <p>Phone: +1-800-555-1234</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 main-footer-section">
+                    <h3>Address</h3>
+                    <p>123 Library St, Knowledge City</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 main-footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </article>
+        </section>
+        <p class="main-footer-bottom">© 2025 Just Library. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="/Sass/all.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.main-menu-toggle');
+        const navLinks = document.querySelector('.main-nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    });
+
+    const flip = document.getElementById("flip");
+    const front = document.querySelector(".front");
+
+    flip.addEventListener("click", ro);
+
+    function ro() {
+        front.classList.toggle("flip")
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - Welcome to the World of Knowledge</title>
+    <link rel="stylesheet" href="/Sass/main.css">
+    <link rel="stylesheet" href="/Sass/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/Sass/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-logo">Just Library</div>
+        <div class="categories-search-bar">
+            <input type="text" placeholder="Search for books..." class="search">
+        </div>
+        <nav>
+            <div class="main-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="main-nav-links">
+                <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="Categories.html">Categories <i class="fas fa-book"></i></a></li>
+                <li><a href="servieces.html">Services <i class="fas fa-tools"></i></a></li>
+                <li><a href="contact_us.html">Contact <i class="fas fa-phone"></i></a></li>
+                <li><a href="#">Cart <i class="fas fa-shopping-cart"></i></a></li>
+                <!-- <li><a href="#">Search <i class="fas fa-search icon-search"></i></a></li> -->
+                <li><a href="" style="color: #00bcd4;">Profile <i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article class="images container">
+                <div class="image-box row mb-6">
+                    <img src="/Sass/images/cover2.jpg" alt="cover-img" class="cover-img">
+                    <div class="profile">
+                        <img src="/Sass/images/PF1.jpg" alt="profile-img" class="profile-img">
+                    </div>
+                </div>
+                <div class="Bio-section">
+                    <h2 class="mb-2">Light Yagami</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    <div class="user-buutons">
+                        <button> <i class="fas fa-message"></i></button>
+                        <button class="follow"><b>Follow</b> <i class="fas fa-plus"></i></button>
+                        <button class="follow"><b>Edit Profile</b> <i class="fas fa-user"></i></button>
+                        <button class="follow"><b>Friend</b> <i class="fas fa-check"></i></button>
+                        <button><i class="fas fa-share"></i></button>
+                    </div>
+                    <div class="border mb-5"></div>
+                    <div class="followers row">
+                        <div class="col-4 border-left">
+                            <h3>870</h3>
+                            <h5>Following</h5>
+                        </div>
+                        <div class="col-4 border-left">
+                            <h3>120K</h3>
+                            <h5>Followers</h5>
+                        </div>
+                        <div class="col-4">
+                            <h3>345K</h3>
+                            <h5>Likes</h5>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="main-body-profile container mt-5">
+                <div class="body-profile row">
+                    <nav class="nav-buttons-profile">
+                        <button id="brleft" class="brleft">Favorite</button>
+                        <button id="brright" class="brright">Friends</button>
+                    </nav>
+                    <div class="favorite mt-2 d-n">
+                        <div class="book d-flex">
+                            <div class="info-book">
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/Books Covers/1 (12).jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h2>We Dream of Space</h2>
+                                    <h3>By : Erwin Smith</h3>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <!-- <button>Profile</button> -->
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="book d-flex">
+                            <div class="info-book">
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/Books Covers/1 (12).jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h2>We Dream of Space</h2>
+                                    <h3>By : Erwin Smith</h3>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <!-- <button>Profile</button> -->
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="book d-flex">
+                            <div class="info-book">
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/Books Covers/1 (12).jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h2>We Dream of Space</h2>
+                                    <h3>By : Erwin Smith</h3>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <!-- <button>Profile</button> -->
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="book d-flex">
+                            <div class="info-book">
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/Books Covers/1 (12).jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h2>We Dream of Space</h2>
+                                    <h3>By : Erwin Smith</h3>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <!-- <button>Profile</button> -->
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friends d-n">
+                        <div class="friend">
+                            <div>
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/PF4.jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>Erwin Smith</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <button>Profile</button>
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div>
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/PF5.jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>Allan Walker</h3>
+                                    <p>quod error saepe exercitationem iusto quo fugit aspernatur at,</p>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <button>Profile</button>
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div>
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/PF1.jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>Ketty Perry</h3>
+                                    <p>laudantium earum dolore obcaecati odit commodi. Id, fugiat!</p>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <button>Profile</button>
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div>
+                                <div class="me-4">
+                                    <img class="imgRWH" src="/Sass/images/PF2.jpg" alt="">
+                                </div>
+                                <div class="">
+                                    <h3>Marco De Niero</h3>
+                                    <p>Obcaecati odio temporibus praesentium? Assumenda quia molestias</p>
+                                </div>
+                            </div>
+                            <div class="friend-buttons">
+                                <button>Profile</button>
+                                <button class="red">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <section class="container">
+            <article class="row">
+                <div class="col-lg-4 col-sm-12 main-footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@justlibrary.com</p>
+                    <p>Phone: +1-800-555-1234</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 main-footer-section">
+                    <h3>Address</h3>
+                    <p>123 Library St, Knowledge City</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 main-footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </article>
+        </section>
+        <p class="main-footer-bottom">© 2025 Just Library. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="/Sass/all.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.main-menu-toggle');
+        const navLinks = document.querySelector('.main-nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    });
+
+
+
+    // <button class="brleft">Favorite</button>
+    // <div class="favorite mt-2 d-n">
+    // <button class="brright">Friends</button>
+    // <div class="friends d-n">
+
+
+    const fav = document.getElementById("brleft");
+    fav.addEventListener("click", favo);
+    function favo() {
+        const divFav = document.querySelector(".favorite")
+        divFav.classList.toggle("d-n")
+        const divFri = document.querySelector(".friends")
+        divFri.classList.add("d-n")
+    };
+
+
+    const fri = document.getElementById("brright");
+    fri.addEventListener("click", frio);
+    function frio() {
+        const divFri = document.querySelector(".friends")
+        divFri.classList.toggle("d-n")
+        const divFav = document.querySelector(".favorite")
+        divFav.classList.add("d-n")
+    };
+
+
+</script>
+
+
+</html>

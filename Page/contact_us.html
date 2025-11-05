@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Library - Contact Us</title>
     <link rel="stylesheet" href="../Sass/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Sass/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/Sass/all.min.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-}
-
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
     </style>
 </head>
+
 <body>
-    <header class="contact-header">
-        <div class="contact-logo">Just Library</div>
-        <div class="contact-search-bar">
-            <input type="text" placeholder="Search for books...">
-            <i class="fas fa-search"></i>
+    <header class="main-header">
+        <div class="main-logo">Just Library</div>
+        <div class="categories-search-bar">
+            <input type="text" placeholder="Search for books..." class="search">
         </div>
-        <nav class="contact-nav">
-            <div class="contact-menu-toggle"><i class="fas fa-bars"></i></div>
-            <ul class="contact-nav-links">
-                <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-                <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
+        <nav>
+            <div class="main-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="main-nav-links">
+                <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="Categories.html">Categories <i class="fas fa-book"></i></a></li>
+                <li><a href="servieces.html">Services <i class="fas fa-tools"></i></a></li>
+                <li><a href="contact_us.html" style="color: #00bcd4;">Contact <i class="fas fa-phone"></i></a></li>
+                <li><a href="#">Cart <i class="fas fa-shopping-cart"></i></a></li>
+                <!-- <li><a href="#">Search <i class="fas fa-search icon-search"></i></a></li> -->
+                <li><a href="opening.html">Login <i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -61,44 +64,61 @@ body {
             <div class="contact-details">
                 <h2>Contact Information</h2>
                 <div class="contact-info-item">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone p-2"></i>
                     <p>+1-800-555-1234<br>+1-800-555-4444 info@justlibrary.com</p>
                 </div>
                 <div class="contact-info-item">
-                    <i class="fas fa-clock"></i>
+                    <i class="fas fa-clock p-2"></i>
                     <p>Str - Thu: 9:00 AM - 5:00 PM<br>Fri : Closed</p>
                 </div>
                 <div class="contact-info-item">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-linkedin-in"></i>
-                    <p>$500 - $500 - $500 9:00 - 9:00</p>
+                    <p class="p-2">$500 - $500 - $500 9:00 - 9:00</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="contact-footer">
-        <div class="contact-footer-content">
-            <div class="contact-footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: info@justlibrary.com</p>
-                <p>Phone: +1-800-555-1234</p>
-            </div>
-            <div class="contact-footer-section">
-                <h3>Address</h3>
-                <p>123 Library St, Knowledge City</p>
-            </div>
-            <div class="contact-footer-section">
-                <h3>Follow Us</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <p class="contact-footer-bottom">© 2025 Just Library. All rights reserved.</p>
+    <footer class="main-footer">
+        <section class="container">
+            <article class="row">
+                <div class="col-lg-4 col-sm-12 p-lg-0 pb-sm-4 main-footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@justlibrary.com</p>
+                    <p>Phone: +1-800-555-1234</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 p-lg-0 pb-sm-4 main-footer-section">
+                    <h3>Address</h3>
+                    <p>123 Library St, Knowledge City</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 p-lg-0 pb-sm-4 main-footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </article>
+        </section>
+        <p class="main-footer-bottom">© 2025 Just Library. All rights reserved.</p>
     </footer>
 
-    <script src="../Js/contact_us.js"></script>
+    <script src="/Sass/all.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.main-menu-toggle');
+            const navLinks = document.querySelector('.main-nav-links');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
+
 </body>
+
 </html>
