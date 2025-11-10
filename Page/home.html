@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Library - Welcome to the World of Knowledge</title>
-    <link rel="stylesheet" href="/Sass/main.css">
-    <link rel="stylesheet" href="/Sass/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/Sass/all.min.css">
+    <link rel="stylesheet" href="../Sass/main.css">
+    <link rel="stylesheet" href="../Sass/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../Sass/all.min.css">
 
     <style>
         * {
@@ -178,20 +178,25 @@
         </section>
         <p class="main-footer-bottom">© 2025 Just Library. All rights reserved.</p>
     </footer>
-
-    <script src="/Sass/all.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.querySelector('.main-menu-toggle');
-            const navLinks = document.querySelector('.main-nav-links');
-
-            if (menuToggle) {
-                menuToggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('active');
-                });
-            }
-        });
-    </script>
 </body>
+
+<script src="../Sass/all.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.main-menu-toggle');
+        const navLinks = document.querySelector('.main-nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        let explore = document.querySelector(".main-explore-btn");
+        explore.addEventListener("click", () => window.open("Categories.html"))
+    });
+
+
+</script>
 
 </html>
